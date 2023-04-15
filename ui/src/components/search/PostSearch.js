@@ -78,7 +78,7 @@ const PostSearch = () => {
             onChange={(e) => setLookup(e.target.value)}
           />
           {postSearch
-            .filter((search) => search.title.toLowerCase().includes(lookup))
+            .filter((search) => search.ingredients.toLowerCase().includes(lookup) || search.title.toLowerCase().includes(lookup))
             .map((search) =>
               lookup.length > 0 ? (
                 <Grid item xs>
