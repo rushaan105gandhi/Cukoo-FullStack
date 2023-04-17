@@ -37,7 +37,7 @@ const Posts = () => {
     <Box>
       <Typography variant="h4" align="center">
         {" "}
-        Latest Recipes{" "}
+        Famous Recipes{" "}
       </Typography>
       <Grid
         container
