@@ -53,7 +53,7 @@ const PostsCard = ({ myDirection, title, excerpt, blogHref, image }) => {
                   Share
                 </Button>
                 <Button sx={{ color: "tomato" }} size="large">
-                  Learn More
+                  See Recipe
                 </Button>
               </CardActions>
             </CardContent>
