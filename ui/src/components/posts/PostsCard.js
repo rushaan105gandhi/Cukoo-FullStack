@@ -9,8 +9,12 @@ import {
   Typography,
 } from "@mui/material";
 
-const PostsCard = ({ myDirection, title, excerpt, blogHref, image }) => {
+const PostsCard = ({ myDirection, title, excerpt, blogHref, image, post_url }) => {
   console.log(image)
+
+  const handleShare = () => {
+    window.open("https://www.instagram.com/cukoorecipe/");
+   };
   return (
     <Box mt={3}>
       <Link href={blogHref} sx={{ textDecoration: "none" }}>
@@ -49,7 +53,7 @@ const PostsCard = ({ myDirection, title, excerpt, blogHref, image }) => {
                 {excerpt}
               </Typography>
               <CardActions>
-                <Button sx={{ color: "tomato" }} size="large">
+                <Button sx={{ color: "tomato" }} size="large" onClick={handleShare}>
                   Share
                 </Button>
                 <Button sx={{ color: "tomato" }} size="large">
